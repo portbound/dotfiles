@@ -57,6 +57,7 @@ window#waybar.hidden {
 #wireplumber,
 #network,
 #bluetooth,
+#custom-notes,
 #custom-battery-mode,
 #pulseaudio,
 #custom-power,
@@ -86,6 +87,10 @@ window#waybar.hidden {
     background-color: #a894e2;
 }
 
+#custom-notes {
+    background-color: #E2C794;
+}
+
 #network {
     background-color: #94e2d5;
     padding-right: 17px;
@@ -108,7 +113,7 @@ window#waybar.hidden {
 }
 
 #custom-battery-mode {
-    background-color: #94e2b3;
+    background-color: #9de294;
 }
 
 #custom-power {

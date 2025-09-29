@@ -18,6 +18,7 @@
         "network",
         "battery",
         "bluetooth",
+        "custom/notes",
         "custom/battery-mode",
         "custom/power"
     ],
@@ -108,21 +109,14 @@
         },
         "on-click": "pavucontrol"
     },
-    "custom/media": {
-        "format": "{icon} {text}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    },
     "custom/power": {
         "format" : " ⏻ ",
 		"tooltip": false,
 		"on-click": "$HOME/.config/dotfiles/waybar/power-menu.sh"
+    },
+    "custom/notes": {
+        "format": " 󰏫 ",
+        	"tooltip": false,
+                "on-click": "ghostty -e nvim ~/Documents/Notes/scratchpad.md"
     }
 }
