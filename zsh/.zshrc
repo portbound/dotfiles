@@ -107,3 +107,5 @@ alias dots="nvim ~/.config/dotfiles/"
 alias batmod="~/scripts/toggle_conservation_mode.sh"
 alias szsh="source ~/.zshrc"
 alias lg="lazygit"
+
+fastfetch
