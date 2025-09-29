@@ -1,11 +1,11 @@
 // -*- mode: jsonc -*-
 {
-    "layer": "top", // Waybar at top layer
-    "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
-    "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
+    "layer": "top", 
+    "position": "top",
+    "margin-top": 10,
+    // "height": 30, // Waybar height (to be removed for auto height)
+    "width": 1920,
+    "spacing": 4, 
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window"
@@ -17,11 +17,11 @@
         "pulseaudio",
         "network",
         "battery",
-        // "battery#bat2",
-        "tray"
-        // "custom/power"
+        "bluetooth",
+        "custom/battery-mode",
+        "custom/power"
     ],
-    // Modules configuration
+
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -63,7 +63,7 @@
     "clock": {
         "format": "{:%a, %b %d | %I:%M %p}",        
         "timezone": "America/New_York",
-	"tooltip": false,
+	"tooltip": false
     },
     "battery": {
         "states": {
@@ -71,31 +71,24 @@
             "warning": 40,
             "critical": 20
         },
-        "format": "{capacity}% {icon} ",
-        // "format-full": "{capacity}% {icon}",
-        // "format-charging": "{capacity}% {icon}",
-        // "format-plugged": "{capacity}% ",
-        // "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
+        "format": "{capacity}% {icon}",
         "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     },
-    "power-profiles-daemon": {
-      "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-      "tooltip": true,
-      "format-icons": {
-        "default": "",
-        "performance": "",
-        "balanced": "",
-        "power-saver": ""
-      }
+    "custom/battery-mode": {
+        "format": "  ",
+        "on-click": "ghostty -e ~/scripts/toggle_conservation_mode.sh",
+        "tooltip": false
     },
     "network": {
         "format-wifi": "Connected ",
         "format-ethernet": "Connected 󰈀",
         "format-disconnected": "Disconnected ⚠",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "ghostty -e nmtui"
+    },
+    "bluetooth": {
+        "format": "  ",
+        "on-click": "ghostty -e bluetui"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -104,8 +97,10 @@
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": "0%  | {format_source}",
         // "format-source": "{volume}% ",
+        // "format-source": "󰍬",
         "format-source": "",
-        "format-source-muted": "",
+        // "format-source-muted": "󰍭",
+        "format-source-muted": " ",
         "format-icons": {
             "headphone": "",
             "headset": "",
@@ -126,15 +121,8 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
-        "format" : "⏻ ",
+        "format" : " ⏻ ",
 		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
-		}
+		"on-click": "$HOME/.config/dotfiles/waybar/power-menu.sh"
     }
 }
