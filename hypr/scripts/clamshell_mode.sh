@@ -1,4 +1,6 @@
 #!/usr/bin/env zsh
+#
+## Using Kanshi instead - but keeping this around in case we need it
 
 INTERNAL_MONITOR="eDP-1"
 INTERNAL_MONITOR_ENABLE_CONFIG="eDP-1, preferred, auto, 1"
