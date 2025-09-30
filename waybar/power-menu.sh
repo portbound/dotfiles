@@ -1,14 +1,17 @@
 #!/bin/sh
 
 entries="⏻ Power Off
-⭮ Restart
+󰔈  Hibernate
+  Restart
 ⏾ Suspend"
 chosen=$(echo -e "$entries" | wofi --dmenu -i --prompt "Power Menu")
 
 case "$chosen" in
 	"⏻ Power Off")
 		systemctl poweroff ;;
-	"⭮ Restart")
+	"󰔈  Hibernate")
+		systemctl hibernate ;;
+	"  Restart")
 		systemctl reboot ;;
 	"⏾ Suspend")
 		systemctl suspend ;;
