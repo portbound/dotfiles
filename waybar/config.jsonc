@@ -65,6 +65,7 @@
             "critical": 20
         },
         "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
         "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     },
     "custom/battery-mode": {
