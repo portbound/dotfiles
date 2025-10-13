@@ -1,15 +1,8 @@
-profile "docked" {
-    output "eDP-1" disable
-    output "DP-9" {
-        mode 3440x1440
-        position 0,0
-    }
+profile undocked {
+    output eDP-1 enable
 }
 
-profile "undocked" {
-    output "DP-9" disable
-    output "eDP-1" {
-        mode 1920x1200
-        position 0,0
-    }
+profile docked {
+    output "Sceptre Tech Inc Sceptre O34 Unknown" mode 3440x1440 position 0,0
+    output eDP-1 disable
 }
