@@ -2,9 +2,9 @@
 {
     "layer": "top", 
     "position": "top",
-    "margin-top": 10,
+    // "margin-top": 10,
     // "height": 30, // Waybar height (to be removed for auto height)
-    "width": 1920,
+    // "width": 1920,
     "spacing": 4, 
     "modules-left": [
         "hyprland/workspaces",
@@ -15,6 +15,7 @@
     ],
     "modules-right": [
         "pulseaudio",
+        // "custom/mic",
         "network",
         "battery",
         "bluetooth",
@@ -86,20 +87,22 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}  | {format_source}",
+        "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}%  {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": "0%  | {format_source}",
-        // "format-source": "{volume}% ",
-        // "format-source": "󰍬",
-        "format-source": "",
-        // "format-source-muted": "󰍭",
-        "format-source-muted": " ",
         "format-icons": {
             "headphone": "",
             "headset": "",
             "default": ""
         },
+        "on-click": "pavucontrol"
+    },
+    "custom/mic": {
+        "format": "{format_source}",
+        "format-muted": "0%  | {format_source}",
+        "format-source": "",
+        "format-source-muted": " ",
         "on-click": "pavucontrol"
     },
     "custom/power": {
