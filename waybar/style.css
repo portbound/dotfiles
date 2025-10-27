@@ -81,44 +81,37 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
+    padding: 6px 15px 6px 12px;
     background-color: #414868;
     color: #c0caf5;
 }
 
 #bluetooth {
     background-color: #c0caf5;
-    /* background-color: #a894e2; */
 }
 
 #custom-notes {
-    /* background-color: #E2C794; */
     background-color: #c0caf5;
 }
 
 #network {
     background-color: #414868;
     color: #c0caf5;
-    /* background-color: #c0caf5; */
-    /* background-color: #94e2d5; */
     padding-right: 17px;
 }
 
 #battery {
-    /* background-color: #94e2d5; */
-    /* background-color: #c0caf5; */
-    background-color: #94E3B2;
+    background-color: #94CFE3;
 }
 
 #battery.warning,
 #battery.critical,
 #battery.urgent {
-    background-color: #ff0000;
-    color: #FFFF00;
+    background-color: #e29494;
 }
 
 #battery.charging {
     background-color: #9de294;
-    color: #181825;
 }
 
 #custom-mic {
