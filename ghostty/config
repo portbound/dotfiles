@@ -45,16 +45,17 @@
 font-size = 16
 font-family = "Maple Mono NF"
 shell-integration-features = no-cursor
-background-opacity = 0.8
+# background-opacity = 0.95
 gtk-titlebar = false
-window-padding-x = 15
-window-padding-y = 15,0
+window-padding-x = 10
+window-padding-y = 10
 window-width = 192
 window-height = 40
-theme = "Ultra Dark"
-# theme = "vague"
-mouse-hide-while-typing = true
-keybind = ctrl+v=paste_from_clipboard
+# theme = "Ultra Dark"
+theme = "Iceberg Dark"
+# theme = "Kanagawabones"
+# theme = "Solarized Osaka Night"
+ # theme = "TokyoNight"
 # keybind = alt+t=new_tab
 keybind = alt+o=new_split:right
 keybind = ctrl+left_bracket=goto_split:left
