@@ -55,7 +55,7 @@
         }
     },
     "clock": {
-        "format": "{:%a, %b %d | %I:%M %p}",        
+        "format": "{:%a, %b %d <big> 󰆧 </big> %I:%M %p}",        
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "timezone": "America/New_York",
     },
@@ -79,7 +79,7 @@
         "format-ethernet": "Connected 󰈀",
         "format-disconnected": "Disconnected ⚠",
         "tooltip": false,
-        "on-click": "ghostty -e nmtui"
+        "on-click": "ghostty -e impala"
     },
     "bluetooth": {
         "format": "  ",
