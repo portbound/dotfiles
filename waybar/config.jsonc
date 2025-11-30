@@ -14,13 +14,13 @@
         "clock"
     ],
     "modules-right": [
+        "network",
         "pulseaudio",
         // "custom/mic",
-        "network",
-        "battery",
         "bluetooth",
         "custom/notes",
         "custom/battery-mode",
+        "battery",
         "custom/power"
     ],
 
@@ -55,7 +55,7 @@
         }
     },
     "clock": {
-        "format": "{:%a, %b %d <big> 󰆧 </big> %I:%M %p}",        
+        "format": "{:%a, %b %d <big> 󰆧 </big> %H:%M %p}",        
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "timezone": "America/New_York",
     },
@@ -79,7 +79,7 @@
         "format-ethernet": "Connected 󰈀",
         "format-disconnected": "Disconnected ⚠",
         "tooltip": false,
-        "on-click": "ghostty -e impala"
+        "on-click": "ghostty -e nmtui"
     },
     "bluetooth": {
         "format": "  ",
@@ -99,8 +99,7 @@
         "on-click": "pavucontrol"
     },
     "custom/mic": {
-        "format": "{format_source}",
-        "format-muted": "0%  | {format_source}",
+        "format": "",
         "format-source": "",
         "format-source-muted": " ",
         "on-click": "pavucontrol"
