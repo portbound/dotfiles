@@ -42,8 +42,8 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-font-size = 16
-font-family = "Maple Mono NF"
+font-size = 15
+font-family = "Maple Mono" 
 shell-integration-features = no-cursor
 # background-opacity = 0.95
 gtk-titlebar = false
