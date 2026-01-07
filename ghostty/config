@@ -51,12 +51,8 @@ window-padding-x = 10
 window-padding-y = 10
 window-width = 192
 window-height = 40
-# theme = "Ultra Dark"
-theme = "Iceberg Dark"
-# theme = "Kanagawabones"
-# theme = "Solarized Osaka Night"
- # theme = "TokyoNight"
-# keybind = alt+t=new_tab
+# theme = "Iceberg Dark"
+theme = "kanso"
 keybind = alt+o=new_split:right
 keybind = ctrl+left_bracket=goto_split:left
 keybind = ctrl+right_bracket=goto_split:right	
