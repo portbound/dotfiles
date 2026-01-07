@@ -2,9 +2,6 @@
 {
     "layer": "top", 
     "position": "top",
-    // "margin-top": 10,
-    // "height": 30, // Waybar height (to be removed for auto height)
-    // "width": 1920,
     "spacing": 4, 
     "modules-left": [
         "hyprland/workspaces",
@@ -65,8 +62,8 @@
             "warning": 40,
             "critical": 20
         },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format": "{icon} {capacity}",
+        "format-charging": " {capacity}",
         "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     },
     "custom/battery-mode": {
@@ -75,9 +72,9 @@
         "tooltip": false
     },
     "network": {
-        "format-wifi": "Connected ",
-        "format-ethernet": "Connected 󰈀",
-        "format-disconnected": "Disconnected ⚠",
+        "format-wifi": "  connected",
+        "format-ethernet": "󰈀 connected",
+        "format-disconnected": "⚠ disconnected",
         "tooltip": false,
         "on-click": "ghostty -e nmtui"
     },
@@ -87,8 +84,8 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}%  {format_source}",
+        "format": "{icon} {volume}",
+        "format-bluetooth": "{format_source}  {volume}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": "󰝟",
         "format-icons": {
