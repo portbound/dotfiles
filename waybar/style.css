@@ -96,9 +96,11 @@ window#waybar.hidden {
 }
 
 #network {
-	background-color: #414868;
-	color: #c0caf5;
-	padding-right: 17px;
+	background-color: #94CFE3;
+}
+
+#network.disconnected {
+	background-color: #e29494;
 }
 
 #battery {

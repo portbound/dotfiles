@@ -11,12 +11,11 @@
         "clock"
     ],
     "modules-right": [
-        "network",
         "pulseaudio",
-        // "custom/mic",
         "bluetooth",
         "custom/notes",
         "custom/battery-mode",
+        "network",
         "battery",
         "custom/power"
     ],
@@ -62,9 +61,10 @@
             "warning": 40,
             "critical": 20
         },
-        "format": "{icon} {capacity}",
-        "format-charging": " {capacity}",
+        "format": "{icon}",
+        "format-charging": "",
         "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+	    "tooltip-format": "{capacity}"
     },
     "custom/battery-mode": {
         "format": "  ",
@@ -72,9 +72,9 @@
         "tooltip": false
     },
     "network": {
-        "format-wifi": "  connected",
-        "format-ethernet": "󰈀 connected",
-        "format-disconnected": "⚠ disconnected",
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "",
         "tooltip": false,
         "on-click": "ghostty -e nmtui"
     },
