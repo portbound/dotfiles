@@ -4,11 +4,12 @@
 	min-height: 0;
 	/* font-family: Maple Mono; */
 	font-family: Ubuntu Nerd Font;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 window#waybar {
-	background-color: #24283b;
+	/* background-color: #24283b; */
+	background-color: transparent;
 	color: #c0caf5;
 	/* border-radius: 10px; */
 	transition-property: background-color;
@@ -20,17 +21,20 @@ window#waybar.hidden {
 }
 
 #workspaces {
-	margin-left: 3px;
+	/* margin: 20px 10px 20px 20px; */
+	margin-top: 10px;
+	margin-left: 10px;
+	/* margin-bottom: 10px; */
 	background-color: transparent;
-	padding-right: 10px;
+	/* padding: 12px; */
 }
 
 #workspaces button {
 	all: initial;
 	min-width: 0;
 	box-shadow: inset 0 -3px transparent;
-	padding: 6px 18px;
-	margin: 6px 3px;
+	padding: 12px 24px 12px 24px;
+	margin-right: 4px;
 	border-radius: 4px;
 	background-color: #414868;
 	color: #cdd6f4;
@@ -66,10 +70,11 @@ window#waybar.hidden {
 #custom-power-profiles-daemon,
 #power {
 	border-radius: 4px;
-	margin: 6px 3px;
-	padding: 6px 12px;
+	padding: 12px;
 	background-color: #1e1e2e;
 	color: #181825;
+	/* max-height: 20px; */
+	/* margin-top: 10px; */
 }
 
 #custom-logo {
@@ -82,20 +87,34 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-	padding: 6px 15px 6px 12px;
+	/* padding: 6px 15px 6px 12px; */
+	/* margin: 20px 0px 20px 0px; */
+	/* background-color: #94CFE3; */
+	margin-top: 10px;
 	background-color: #414868;
-	color: #c0caf5;
+	color: #cdd6f4;
+	/* color: #c0caf5; */
 }
 
 #bluetooth {
-	background-color: #c0caf5;
+	/* margin: 20px 0px 20px 0px; */
+	/* background-color: #c0caf5; */
+	margin-top: 10px;
+	color: #cdd6f4;
+	background-color: #414868;
 }
 
 #custom-notes {
-	background-color: #c0caf5;
+	/* margin: 20px 0px 20px 0px; */
+	/* background-color: #c0caf5; */
+	margin-top: 10px;
+	color: #cdd6f4;
+	background-color: #414868;
 }
 
 #network {
+	/* margin: 20px 0px 20px 0px; */
+	margin-top: 10px;
 	background-color: #94CFE3;
 }
 
@@ -104,6 +123,8 @@ window#waybar.hidden {
 }
 
 #battery {
+	/* margin: 20px 0px 20px 0px; */
+	margin-top: 10px;
 	background-color: #94CFE3;
 }
 
@@ -118,27 +139,36 @@ window#waybar.hidden {
 }
 
 #custom-mic {
+	/* margin: 20px 0px 20px 0px; */
 	color: #c0caf5;
 	background-color: #414868;
 }
 
 #custom-battery-mode {
+	/* margin: 20px 0px 20px 0px; */
 	/* background-color: #9de294; */
-	background-color: #c0caf5;
+	/* background-color: #c0caf5; */
+	margin-top: 10px;
+	color: #cdd6f4;
+	background-color: #414868;
 }
 
 #custom-power {
+	/* margin: 20px 20px 20px 0px; */
+	margin-top: 10px;
+	margin-right: 10px;
 	background-color: #e29494;
-	margin-right: 6px;
 }
 
 #custom-power-profiles-daemon {
+	margin-top: 10px;
 	background-color: #94e2d5;
 }
 
 #clock {
-	font-family: Maple Mono NF;
+	/* font-size: 20px; */
 }
+
 
 tooltip {
 	border-radius: 8px;

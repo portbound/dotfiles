@@ -3,6 +3,7 @@
     "layer": "top", 
     "position": "top",
     "spacing": 4, 
+    // "width": 2780,
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window"
@@ -11,10 +12,10 @@
         "clock"
     ],
     "modules-right": [
-        "pulseaudio",
-        "bluetooth",
         "custom/notes",
         "custom/battery-mode",
+        "bluetooth",
+        "pulseaudio",
         "network",
         "battery",
         "custom/power"
@@ -29,10 +30,18 @@
             "*": [1, 2, 3, 4]
         }
     },
+
     "hyprland/window": { 
+		"format":"{initialTitle}",
         "max-length": 40,
+		"icon": true,
         "separate-outputs": false,
-        "tooltip": false
+        "tooltip": false,
+		"rewrite": {
+				"(.*) - Google Chrome": "Chrome",
+				"Loading...": "Files",
+				"Spotify Premium": " Spotify"
+		}
     },
     "keyboard-state": {
         "numlock": true,
@@ -61,9 +70,10 @@
             "warning": 40,
             "critical": 20
         },
-        "format": "{icon}",
-        "format-charging": "",
+        "format": "{icon} [ {capacity}% ]",
+        "format-charging": " [ {capacity}% ]",
         "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+				"tooltip": false,
 	    "tooltip-format": "{capacity}"
     },
     "custom/battery-mode": {
@@ -72,7 +82,7 @@
         "tooltip": false
     },
     "network": {
-        "format-wifi": "",
+        "format-wifi": "	[ {essid} ]",
         "format-ethernet": "󰈀",
         "format-disconnected": "",
         "tooltip": false,
@@ -84,7 +94,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}",
+        "format": "{icon}	[ {volume}% ]",
         "format-bluetooth": "{format_source}  {volume}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": "󰝟",
