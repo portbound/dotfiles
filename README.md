@@ -1,1 +1,1 @@
-<img width="3440" height="1440" alt="2025-10-27-145539_hyprshot" src="https://github.com/user-attachments/assets/a19987bd-a3ad-4411-b900-8cb8a071be6d" />
+<img width="3440" height="1438" alt="image" src="https://github.com/user-attachments/assets/786d5d5b-efa2-4cc2-89c6-32e76b755c21" />
