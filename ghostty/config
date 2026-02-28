@@ -45,16 +45,17 @@ custom-shader = shaders/cursor_warp.glsl
 custom-shader = shaders/ripple_cursor.glsl
 
 font-size = 15
-font-family = "Maple Mono" 
+# font-family = "Ubuntu Nerd Font"
+font-family = Maple Mono
 shell-integration-features = no-cursor
-# background-opacity = 0.95
+# background-opacity = 0.9
 gtk-titlebar = false
+gtk-single-instance = false
 window-padding-x = 10
 window-padding-y = 10
 window-width = 192
 window-height = 40
-# theme = "Iceberg Dark"
-theme = "kanso"
+theme = "Iceberg Dark"
 keybind = alt+o=new_split:right
 keybind = ctrl+left_bracket=goto_split:left
 keybind = ctrl+right_bracket=goto_split:right	

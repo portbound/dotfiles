@@ -12,8 +12,8 @@
         "clock"
     ],
     "modules-right": [
-        "custom/notes",
-        "custom/battery-mode",
+        // "custom/notes",
+        // "custom/battery-mode",
         "bluetooth",
         "pulseaudio",
         "network",
@@ -60,7 +60,7 @@
         }
     },
     "clock": {
-        "format": "{:%a, %b %d <big> 󰆧 </big> %H:%M %p}",        
+        "format": "{:%a, %b %d	%I:%M %p}",        
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "timezone": "America/New_York",
     },
@@ -89,7 +89,7 @@
         "on-click": "ghostty -e nmtui"
     },
     "bluetooth": {
-        "format": "  ",
+        "format": "   [ {num_connections} ]",
         "on-click": "ghostty -e bluetui"
     },
     "pulseaudio": {
