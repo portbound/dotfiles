@@ -2,16 +2,13 @@
 	border: none;
 	border-radius: 0;
 	min-height: 0;
-	/* font-family: Maple Mono; */
 	font-family: Ubuntu Nerd Font;
 	font-size: 18px;
 }
 
 window#waybar {
-	/* background-color: #24283b; */
-	background-color: transparent;
+	background-color: #24283b;
 	color: #c0caf5;
-	/* border-radius: 10px; */
 	transition-property: background-color;
 	transition-duration: 0.5s;
 }
@@ -20,43 +17,20 @@ window#waybar.hidden {
 	opacity: 0.5;
 }
 
-#window {
-	margin-top: 10px;
-	margin-left: 10px;
-}
-
-#workspaces {
-	margin-top: 10px;
-	margin-left: 10px;
-	/* background-color: transparent; */
-	/* Kept from your config for visibility */
-}
-
 #workspaces button {
 	border: none;
-	border-radius: 4px;
-	min-width: 0;
+	margin-top: 4px;
+	margin-bottom: 4px;
 	margin-right: 4px;
-	background-color: #414868;
 	color: #cdd6f4;
 	padding: 6px 12px;
-
-	/* Add these to prevent stretching */
-	margin-top: 8px;
-	/* Pushes button down from the top */
-	margin-bottom: 8px;
-	/* Pushes button up from the bottom */
 }
 
 #workspaces button.active {
-	background-color: #c0caf5;
-	color: #1e1e2e;
-	padding: 12px 24px;
+	border-bottom: 2px solid cyan;
+	color: cyan;
+	font-size: 24px;
 	transition: background-color 0.5s;
-
-	/* Reset margins so the active button can still be "full" height */
-	margin-top: 0px;
-	margin-bottom: 0px;
 }
 
 #workspaces button:hover {
@@ -68,7 +42,6 @@ window#waybar.hidden {
 	background-color: #f38ba8;
 }
 
-#memory,
 #battery,
 #backlight,
 #wireplumber,
@@ -76,76 +49,49 @@ window#waybar.hidden {
 #bluetooth,
 #custom-notes,
 #custom-mic,
-#custom-battery-mode,
+#custom-conservation-mode,
 #pulseaudio,
+#power-profiles-daemon,
 #custom-power,
 #custom-power-profiles-daemon,
 #power {
 	border-radius: 4px;
+	margin-top: 4px;
+	margin-bottom: 4px;
 	padding: 12px;
-	background-color: #1e1e2e;
+	background-color: #c0caf5;
 	color: #181825;
-	/* max-height: 20px; */
-	/* margin-top: 10px; */
 }
 
 #custom-logo {
 	padding-right: 7px;
 	padding-left: 7px;
 	margin-left: 5px;
-	font-size: 15px;
+	font-size: 30px;
 	border-radius: 8px 0px 0px 8px;
-	color: #1793d1;
+	color: #ffe135;
 }
 
-#pulseaudio {
-	/* padding: 6px 15px 6px 12px; */
-	/* margin: 20px 0px 20px 0px; */
-	/* background-color: #94CFE3; */
-	margin-top: 10px;
-	background-color: #414868;
-	color: #cdd6f4;
-	/* color: #c0caf5; */
-}
-
-#bluetooth {
-	/* margin: 20px 0px 20px 0px; */
-	/* background-color: #c0caf5; */
-	margin-top: 10px;
-	color: #cdd6f4;
-	background-color: #414868;
-}
 
 #custom-notes {
-	/* margin: 20px 0px 20px 0px; */
-	/* background-color: #c0caf5; */
 	margin-top: 10px;
 	color: #cdd6f4;
 	background-color: #414868;
 }
 
-#network {
-	/* margin: 20px 0px 20px 0px; */
-	margin-top: 10px;
-	background-color: #c0caf5;
-	/* background-color: #94CFE3; */
+#custom-conservation-mode {
+	font-size: 20px;
+	/* background-color: #9de294; */
 }
 
 #network.disconnected {
 	background-color: #e29494;
 }
 
-#battery {
-	/* margin: 20px 0px 20px 0px; */
-	margin-top: 10px;
-	/* background-color: #94CFE3; */
-	background-color: #c0caf5;
-}
+#battery {}
 
-#battery.warning,
-#battery.critical,
 #battery.urgent {
-	background-color: #e29494;
+	color: #e29494;
 }
 
 #battery.charging {
@@ -153,36 +99,35 @@ window#waybar.hidden {
 }
 
 #custom-mic {
-	/* margin: 20px 0px 20px 0px; */
 	color: #c0caf5;
 	background-color: #414868;
 }
 
-#custom-battery-mode {
-	/* margin: 20px 0px 20px 0px; */
-	/* background-color: #9de294; */
-	/* background-color: #c0caf5; */
-	margin-top: 10px;
-	color: #cdd6f4;
-	background-color: #414868;
-}
-
 #custom-power {
-	/* margin: 20px 20px 20px 0px; */
-	margin-top: 10px;
 	margin-right: 10px;
 	background-color: #e29494;
 }
 
-#custom-power-profiles-daemon {
-	margin-top: 10px;
-	background-color: #94e2d5;
+#power-profiles-daemon {
+	/* background-color: transparent; */
+	font-size: 20px;
+}
+
+#power-profiles-daemon.performance {
+	/* color: #94e2d5; */
+}
+
+#power-profiles-daemon.balanced {
+	/* color: #94e2d5; */
+}
+
+#power-profiles-daemon.power-saver {
+	/* color: #94e2d5; */
 }
 
 #clock {
-	font-size: 24px;
+	font-size: 20px;
 }
-
 
 tooltip {
 	border-radius: 8px;

@@ -5,6 +5,7 @@
     "spacing": 4, 
     // "width": 2780,
     "modules-left": [
+		"custom/logo",
         "hyprland/workspaces",
         "hyprland/window"
     ],
@@ -12,14 +13,19 @@
         "clock"
     ],
     "modules-right": [
-        // "custom/notes",
-        // "custom/battery-mode",
         "bluetooth",
-        "pulseaudio",
         "network",
+        "pulseaudio",
+		"power-profiles-daemon",
         "battery",
+		"custom/conservation-mode",
         "custom/power"
     ],
+
+    "custom/logo": {
+		"format": "  ", 
+    	"tooltip": false,
+    },
 
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -31,18 +37,18 @@
         }
     },
 
-    "hyprland/window": { 
+		  "hyprland/window": { 
 		"format":"{initialTitle}",
-        "max-length": 40,
+		      "max-length": 40,
 		"icon": true,
-        "separate-outputs": false,
-        "tooltip": false,
+		      "separate-outputs": false,
+		      "tooltip": false,
 		"rewrite": {
 				"(.*) - Google Chrome": "Chrome",
 				"Loading...": "Files",
 				"Spotify Premium": " Spotify"
 		}
-    },
+		  },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -60,7 +66,8 @@
         }
     },
     "clock": {
-        "format": "{:%a, %b %d	%I:%M %p}",        
+        // "format": "{:%a, %b %d	%I:%M %p}",        
+        "format": "{:%I:%M %p}",        
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "timezone": "America/New_York",
     },
@@ -76,17 +83,25 @@
 				"tooltip": false,
 	    "tooltip-format": "{capacity}"
     },
-    "custom/battery-mode": {
-        "format": "  ",
-        "on-click": "ghostty -e ~/scripts/toggle_conservation_mode.sh",
-        "tooltip": false
+"custom/conservation-mode": {
+    "format": "{icon}",
+    "return-type": "json",
+    "interval": 30,
+    "exec": "~/scripts/toggle_conservation_mode.sh",
+    "on-click": "sudo ~/scripts/toggle_conservation_mode.sh --toggle",
+    "format-icons": {
+        "on": " 󰔡 ", 
+        "off": " 󰔢 "
     },
+    "tooltip": false
+},
     "network": {
-        "format-wifi": "	[ {essid} ]",
+        "interface": "wlan0",
+		"format-wifi": "	[ {signalStrength}% ]",
         "format-ethernet": "󰈀",
         "format-disconnected": "",
         "tooltip": false,
-        "on-click": "ghostty -e nmtui"
+        "on-click": "ghostty -e impala"
     },
     "bluetooth": {
         "format": "   [ {num_connections} ]",
@@ -97,7 +112,7 @@
         "format": "{icon}	[ {volume}% ]",
         "format-bluetooth": "{format_source}  {volume}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "󰝟",
+        "format-muted": "󰝟 [ 0% ]",
         "format-icons": {
             "headphone": "",
             "headset": "",
@@ -120,5 +135,14 @@
         "format": " 󰏫 ",
         	"tooltip": false,
                 "on-click": "ghostty -e nvim ~/Documents/Notes/scratchpad.md"
-    }
+    },
+"power-profiles-daemon": {
+  "format": "{icon}",
+  "tooltip": true,
+  "format-icons": {
+    "performance": " 󰓅 ",
+    "balanced": " 󰾅 ",
+    "power-saver": " 󰾆 "
+  }
+}
 }

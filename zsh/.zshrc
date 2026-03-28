@@ -107,7 +107,9 @@ fi
 
 alias dots="nvim ~/.config/dotfiles/"
 alias lg="lazygit"
+alias gd="gh dash"
 alias ts="sudo timeshift --create --comments \"update arch\""
 alias hypr="nvim ~/.config/hypr"
+alias artemis="ssh portbound@150.136.32.130"
 
 fastfetch
