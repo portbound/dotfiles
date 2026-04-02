@@ -8,7 +8,7 @@
 
 window#waybar {
 	/* background-color: #24283b; */
-	background-color: #1e2132;
+	background-color: #161821;
 	color: #c0caf5;
 	transition-property: background-color;
 	transition-duration: 0.5s;
@@ -60,7 +60,9 @@ window#waybar.hidden {
 	margin-top: 4px;
 	margin-bottom: 4px;
 	padding: 12px;
-	background-color: #2b2f47;
+	/* background-color: #2b2f47; */
+
+	background-color: #222636;
 	color: #b4af9a;
 }
 
