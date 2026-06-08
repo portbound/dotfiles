@@ -108,6 +108,12 @@ input {
     position x=1280 y=0
 }
 
+switch-events {
+    lid-close {
+        spawn "qs" "-c" "/etc/xdg/quickshell/noctalia-shell" "ipc" "call" "lockScreen" "lock"
+    }
+}
+
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Layout
