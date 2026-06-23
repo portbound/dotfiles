@@ -1,0 +1,7 @@
+customCommands:
+  - key: 'D'
+    command: 'nvim -c "DiffviewOpen {{.SelectedLocalBranch.Name}} ... {{.CheckedOutBranch.Name}}"'
+    context: 'localBranches'
+    description: 'Open in DiffView'
+    output: terminal
+
