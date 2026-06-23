@@ -375,7 +375,9 @@ binds {
 	Mod+Escape hotkey-overlay-title="Lock" { spawn-sh "qs -c /etc/xdg/quickshell/noctalia-shell ipc call lockScreen lock"; }
     Mod+Return hotkey-overlay-title="Launcher" { spawn-sh "qs -c /etc/xdg/quickshell/noctalia-shell ipc call launcher toggle"; }
     Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
-    Mod+B hotkey-overlay-title="Open a Browser: zen" { spawn-sh "flatpak run app.zen_browser.zen &"; }
+    Mod+B hotkey-overlay-title="Open a Browser: helium" { spawn-sh "helium-browser-bin"; }
+    // Mod+B hotkey-overlay-title="Open a Browser: helium" { spawn-sh "flatpak run app.zen_browser.zen &"; }
+	Mod+Z hotkey-overlay-title="Open Zotero" { spawn-sh "/opt/zotero/zotero"; }
     // Mod+Return hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
