@@ -1,36 +1,83 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
-  "modules": [
-    "title",
-    "separator",
-    "os",
-    // "host",
-    "kernel",
-    "uptime",
-    // "packages",
-    "shell",
-    // "display",
-    // "de",
-    "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    // "cursor",
-    // "terminal",
-    // "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    // "swap",
-    "disk",
-    // "localip",
-    "battery",
-    "poweradapter",
-    "locale",
-    "break",
-    "colors"
-  ],
+    "display": {
+        "separator": " "
+    },
+"modules": [
+        {
+            "key": "╭───────────╮",
+            "type": "custom"
+        },
+        {
+            "key": "│ {#32} user    {#keys}│",
+            "type": "title",
+            "format": "{#34}{user-name}"
+        },
+        {
+            "key": "│ {#32}󰇅 host    {#keys}│",
+            "type": "title",
+            "format": "{#34}{host-name}"
+        },
+        {
+            "key": "│ {#32}{icon} uptime  {#keys}│",
+            "type": "uptime"
+        },
+        {
+            "key": "│ {#32}{icon} distro  {#keys}│",
+            "type": "os",
+			"format": "{name}"
+        },
+        {
+            "key": "│ {#32}{icon} kernel  {#keys}│",
+            "type": "kernel"
+        },
+        {
+            "key": "│ {#32}{icon} desktop {#keys}│",
+            "type": "wm"
+        },
+        {
+            "key": "│ {#32}{icon} term    {#keys}│",
+            "type": "terminal",
+			"format": "{pretty-name}"
+        },
+        {
+            "key": "│ {#32}{icon} shell   {#keys}│",
+            "type": "shell"
+        },
+        {
+            "key": "│ {#32}{icon} cpu     {#keys}│",
+            "type": "cpu",
+			"format": "{name}"
+            // "showPeCoreCount": true
+        },
+        {
+            "key": "│ {#32}{icon} gpu     {#keys}│",
+            "type": "gpu"
+        },
+        {
+            "key": "│ {#32}{icon} disk    {#keys}│",
+            "type": "disk",
+			"format": "{size-used} / {size-total} ({size-percentage})",
+            "folders": "/"
+        },
+        {
+            "key": "│ {#32}{icon} memory  {#keys}│",
+            "type": "memory"
+        },
+        {
+            "key": "├───────────┤",
+            "type": "custom"
+        },
+        {
+            "key": "│ {#39} colors  {#keys}│",
+            "type": "colors",
+            "symbol": "circle"
+        },
+        {
+            "key": "╰───────────╯",
+            "type": "custom"
+        }
+    ],
 "logo": {
     "source": "/home/portbound/.config/fastfetch/lain.txt"
 }
