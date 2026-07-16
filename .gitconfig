@@ -1,0 +1,13 @@
+[user]
+	email = jake@portbound.io
+	name = portbound
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[diff]
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = nvim -d "$LOCAL" "$REMOTE"
+[difftool]
+    prompt = false
