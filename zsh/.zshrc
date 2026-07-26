@@ -111,6 +111,7 @@ alias lg="lazygit"
 alias yz="yazi"
 alias nvc="cd ~/.config/nvim && nvim"
 alias dots="cd ~/.config/dotfiles/ && nvim ~/.config/dotfiles/"
+alias repos="cd ~/Documents/Repos/"
 
 fastfetch
 
