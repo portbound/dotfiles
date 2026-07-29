@@ -1,7 +1,8 @@
-# customCommands:
-#   - key: 'D'
-#     command: 'nvim -c "DiffviewOpen {{.SelectedLocalBranch.Name}} ... {{.CheckedOutBranch.Name}}"'
-#     context: 'localBranches'
-#     description: 'Open in DiffView'
-#     output: terminal
-
+customCommands:
+  - key: 'E'
+    command: 'nvim .'
+    context: 'global'
+    description: 'Open repo root in nvim'
+    output: terminal
+gui:
+  mainPanelSplitMode: 'horizontal'
