@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ff="clear && fastfetch"
-alias nn="~/Scripts/new_note.sh"
+alias nn="~/Documents/Scripts/new_note.sh"
 alias lg="lazygit"
 alias yz="yazi"
 alias nvc="cd ~/.config/nvim && nvim"
