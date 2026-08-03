@@ -6,10 +6,12 @@ customCommands:
     description: 'Open repo root in nvim'
     output: terminal
 gui:
+  sidePanelWidth: 0.25
   mainPanelSplitMode: 'horizontal'
   theme:
     activeBorderColor:
-      - "#ababab"
+      # - "#ababab"
+      - "#aeaed1"
       # - "#d97757"
       - bold
     inactiveBorderColor:
