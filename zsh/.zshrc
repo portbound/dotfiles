@@ -109,8 +109,8 @@ alias ff="clear && fastfetch"
 alias nn="~/Documents/Scripts/new_note.sh"
 alias lg="lazygit"
 alias yz="yazi"
-alias nvc="cd ~/.config/nvim && nvim"
-alias dots="cd ~/.config/dotfiles/ && nvim ~/.config/dotfiles/"
+alias nvc="cd ~/.config/nvim && lg"
+alias dots="cd ~/.config/dotfiles/ && lg"
 alias repos="cd ~/Documents/Repos/"
 
 fastfetch
