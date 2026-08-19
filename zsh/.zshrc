@@ -113,6 +113,7 @@ alias oc="opencode"
 alias nvc="cd ~/.config/nvim && lg"
 alias dots="cd ~/.config/dotfiles/ && lg"
 alias repos="cd ~/Documents/Repos/"
+alias updates"sudo dnf update --refresh && flatpak update && dnf needs-restarting -r"
 
 if [ -z "$NVIM" ]; then
     fastfetch
