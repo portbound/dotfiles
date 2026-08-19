@@ -114,7 +114,9 @@ alias nvc="cd ~/.config/nvim && lg"
 alias dots="cd ~/.config/dotfiles/ && lg"
 alias repos="cd ~/Documents/Repos/"
 
-fastfetch
+if [ -z "$NVIM" ]; then
+    fastfetch
+fi
 
 # Created by `pipx` on 2026-06-11 12:39:59
 export PATH="$PATH:/home/portbound/.local/bin"
