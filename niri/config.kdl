@@ -677,3 +677,4 @@ gestures {
 // spawn-at-startup "qs" "-c" "noctalia-shell"
 
 spawn-at-startup "noctalia"
+spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1"
