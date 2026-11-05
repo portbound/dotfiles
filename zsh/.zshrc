@@ -10,7 +10,7 @@ export EDITOR="/usr/sbin/nvim"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="eastwood"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -113,7 +113,7 @@ alias oc="opencode"
 alias nvc="cd ~/.config/nvim && lg"
 alias dots="cd ~/.config/dotfiles/ && lg"
 alias repos="cd ~/Documents/Repos/"
-alias updates"sudo dnf update --refresh && flatpak update && dnf needs-restarting -r"
+alias update="sudo dnf update --refresh && flatpak update && dnf needs-restarting -r"
 
 if [ -z "$NVIM" ]; then
     fastfetch

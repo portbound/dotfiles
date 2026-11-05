@@ -148,7 +148,7 @@ layout {
     // preset-window-heights { }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 1.0; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
@@ -178,7 +178,7 @@ layout {
 
         // Color of the ring on the active monitor.
         // active-color "#7fc8ff"
-		active-color "#6e94b2"
+		active-color "#f51d28"
 
         // Color of the ring on inactive monitors.
         //
@@ -586,7 +586,7 @@ binds {
     Mod+Shift+R { switch-preset-column-width-back; }
 
     Mod+Ctrl+Shift+R { switch-preset-window-height; }
-    Mod+Ctrl+R { reset-window-height; }
+   Mod+Ctrl+R { reset-window-height; }
 
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
@@ -678,3 +678,5 @@ gestures {
 
 spawn-at-startup "noctalia"
 spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1"
+spawn-at-startup "iio-niri" "listen" "--monitor" "eDP-1"
+
