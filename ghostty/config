@@ -42,8 +42,8 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 custom-shader-animation = always
- custom-shader = ~/.config/ghostty/shaders/cursor_sweep.glsl
- custom-shader = ~/.config/ghostty/shaders/ripple_cursor.glsl
+custom-shader = ~/.config/ghostty/shaders/cursor_sweep.glsl
+custom-shader = ~/.config/ghostty/shaders/ripple_cursor.glsl
 mouse-hide-while-typing = true 
 confirm-close-surface = false
 font-size = 16

@@ -177,8 +177,8 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        // active-color "#7fc8ff"
-		active-color "#f51d28"
+        active-color "#38312A"
+		// active-color "#f51d28"
 
         // Color of the ring on inactive monitors.
         //
@@ -675,6 +675,11 @@ gestures {
 
 // noctalia -v4
 // spawn-at-startup "qs" "-c" "noctalia-shell"
+
+window-rule {
+    match app-id="chrome-nngceckbapebfimnlniiiahkandclblb-Default"
+    open-floating true
+}
 
 spawn-at-startup "noctalia"
 spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1"
