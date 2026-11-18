@@ -44,6 +44,7 @@
 custom-shader-animation = always
 custom-shader = ~/.config/ghostty/shaders/cursor_sweep.glsl
 custom-shader = ~/.config/ghostty/shaders/ripple_cursor.glsl
+custom-shader = ~/.config/ghostty/shaders/paper.glsl
 mouse-hide-while-typing = true 
 confirm-close-surface = false
 font-size = 16
@@ -57,9 +58,9 @@ window-padding-x = 20
 window-padding-y = 20
 window-width = 144
 window-height = 42
-theme = "Vague"
-# theme = "Iceberg Dark"
-# theme = "Ultra Dark"
+# theme = "Vague"
+theme = "Novel"
+# theme = "Pencil Light"
 keybind = alt+o=new_split:right
 keybind = ctrl+left_bracket=goto_split:left
 keybind = ctrl+right_bracket=goto_split:right	

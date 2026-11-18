@@ -5,59 +5,62 @@
     },
 "modules": [
         {
-            "key": " {#32} user   {#keys}",
+            "key": " {#30} user   {#keys}",
             "type": "title",
-            "format": "{#34}{user-name}"
+            "format": "{#32}{user-name}"
         },
         {
-            "key": " {#32}󰇅 host   {#keys}",
+            "key": " {#30}󰇅 host   {#keys}",
             "type": "title",
-            "format": "{#34}{host-name}"
+            "format": "{#32}{host-name}"
         },
         {
-            "key": " {#32}{icon} uptime {#keys}",
+            "key": " {#30}{icon} uptime {#keys}",
             "type": "uptime"
         },
         {
-            "key": " {#32}{icon} distro {#keys}",
+            "key": " {#30}{icon} distro {#keys}",
             "type": "os",
 			"format": "{name}"
         },
         {
-            "key": " {#32}{icon} kernel {#keys}",
+            "key": " {#30}{icon} kernel {#keys}",
             "type": "kernel",
 			"format": "{release}"
 
         },
         {
-            "key": " {#32}{icon} desktop{#keys}",
+            "key": " {#30}{icon} desktop{#keys}",
             "type": "wm"
         },
         {
-            "key": " {#32}{icon} term   {#keys}",
+            "key": " {#30}{icon} term   {#keys}",
             "type": "terminal"
         },
         {
-            "key": " {#32}{icon} shell  {#keys}",
+            "key": " {#30}{icon} shell  {#keys}",
             "type": "shell"
         },
         {
-            "key": " {#32}{icon} cpu    {#keys}",
+            "key": " {#30}{icon} cpu    {#keys}",
             "type": "cpu",
 			"format": "{name}"
         },
         {
-            "key": " {#32}{icon} gpu    {#keys}",
+            "key": " {#30}{icon} gpu    {#keys}",
             "type": "gpu"
         },
         {
-            "key": " {#32}{icon} disk   {#keys}",
+            "key": " {#30}{icon} disk   {#keys}",
             "type": "disk",
 			"format": "{size-used} / {size-total}",
             "folders": "/"
-        }
+        },
+
+		"break"
     ],
 "logo": {
-    "source": "/home/portbound/.config/fastfetch/bork.txt"
+    "source": "/home/portbound/.config/fastfetch/frog.txt",
+	"color": { "1": "black"}
 }
 }
